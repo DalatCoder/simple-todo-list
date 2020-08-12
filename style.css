@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  color: #333;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  /* background-color: lawngreen; */
+}
+
+.container .heading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container .form {
+  width: 100%;
+  margin-bottom: 20px;
+
+  display: flex;
+}
+
+.container .form .input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 0;
+  border: 1px solid rgb(94, 92, 92);
+  border-right: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container .form .input:focus {
+  outline: none;
+}
+
+.container .form .add-button {
+  cursor: pointer;
+  flex-basis: 100px;
+  padding: 10px;
+  border-radius: 0;
+  border: 1px solid rgb(94, 92, 92);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.container .todos {
+  list-style: none;
+}
+
+.todos .todo {
+  /* background-color: lightcoral; */
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+
+  transition: background-color 0.5s ease;
+
+  position: relative;
+}
+
+.todos .todo.done {
+  background-color: #ccc;
+  text-decoration: line-through;
+}
+
+.todos .todo button {
+  width: 25px;
+  height: 25px;
+
+  border: none;
+  background-color: transparent;
+  color: lightcoral;
+  border-radius: 50%;
+  padding: 5px;
+
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.todos .todo button:focus {
+  outline: none;
+}
+
+.container .delete-button {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px 30px;
+  font-size: 16px;
+  display: block;
+  margin: 10px auto;
+}
+
+.container .delete-button:focus {
+  outline: none;
+}

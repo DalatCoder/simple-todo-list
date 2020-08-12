@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Simple Todo App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="heading">Danh sách công việc</h1>
+
+      <form id="form" class="form">
+        <input
+          id="input"
+          class="input"
+          type="text"
+          placeholder="Tên công việc"
+          autocomplete="off"
+          value=""
+        />
+        <input class="add-button" type="submit" value="Thêm" />
+      </form>
+
+      <ul class="todos" id="todos">
+        <!--
+        <li class="todo">
+          <span>Ăn sáng</span>
+          <button><i class="far fa-trash-alt"></i></button>
+        </li>  -->
+      </ul>
+
+      <button id="delete-button" class="delete-button">
+        Xóa tất cả
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
